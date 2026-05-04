@@ -55,6 +55,28 @@ body {
   .glass-pill {
     @apply border border-white/55 bg-white/55 backdrop-blur-xl shadow-sm dark:border-white/10 dark:bg-white/5;
   }
+
+  .shine-card::before {
+    background: linear-gradient(
+      120deg,
+      transparent 0%,
+      rgba(255, 255, 255, 0.24) 42%,
+      transparent 68%
+    );
+    content: "";
+    height: 160%;
+    left: -110%;
+    pointer-events: none;
+    position: absolute;
+    top: -30%;
+    transform: rotate(12deg);
+    transition: left 700ms ease;
+    width: 46%;
+  }
+
+  .shine-card:hover::before {
+    left: 120%;
+  }
 }
 
 @keyframes float-card {

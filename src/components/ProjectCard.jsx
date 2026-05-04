@@ -1,9 +1,8 @@
-import { ExternalLink, GitBranch } from 'lucide-react'
-
 function ProjectCard({ title, description, features, tech }) {
   return (
-    <article className="panel group flex h-full flex-col rounded-2xl p-6 hover:-translate-y-2 hover:border-teal-200 hover:shadow-[0_26px_70px_rgba(20,184,166,0.14)] dark:hover:border-teal-800 dark:hover:shadow-[0_26px_70px_rgba(45,212,191,0.10)]">
-      <div className="mb-5 h-2 w-16 rounded-full bg-teal-500 transition group-hover:w-24 dark:bg-teal-300" />
+    <article className="panel shine-card group relative flex h-full flex-col overflow-hidden rounded-3xl p-6 hover:-translate-y-2 hover:border-teal-200 hover:shadow-[0_26px_70px_rgba(20,184,166,0.14)] dark:hover:border-teal-800 dark:hover:shadow-[0_26px_70px_rgba(45,212,191,0.10)]">
+      <div className="absolute right-6 top-6 h-20 w-20 rounded-full bg-teal-300/15 blur-2xl transition duration-500 group-hover:scale-150 dark:bg-teal-300/10" />
+      <div className="relative mb-5 h-2 w-16 rounded-full bg-teal-500 transition group-hover:w-24 dark:bg-teal-300" />
       <h3 className="text-xl font-bold text-slate-950 dark:text-white">{title}</h3>
       <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{description}</p>
       <ul className="mt-5 space-y-2 text-sm text-slate-600 dark:text-slate-300">
@@ -24,25 +23,10 @@ function ProjectCard({ title, description, features, tech }) {
           </span>
         ))}
       </div>
-      <div className="mt-auto flex flex-col gap-3 pt-7 sm:flex-row">
-        <a
-          href="https://github.com"
-          target="_blank"
-          rel="noreferrer"
-          className="focus-ring inline-flex flex-1 items-center justify-center gap-2 rounded-full border border-slate-300 px-4 py-2.5 text-sm font-bold text-slate-800 transition hover:border-teal-300 hover:text-teal-700 dark:border-slate-700 dark:text-slate-100 dark:hover:border-teal-500 dark:hover:text-teal-200"
-        >
-          <GitBranch size={17} />
-          GitHub
-        </a>
-        <a
-          href="https://example.com"
-          target="_blank"
-          rel="noreferrer"
-          className="focus-ring inline-flex flex-1 items-center justify-center gap-2 rounded-full bg-teal-500 px-4 py-2.5 text-sm font-bold text-white transition hover:bg-teal-600 dark:bg-teal-400 dark:text-slate-950 dark:hover:bg-teal-300"
-        >
-          <ExternalLink size={17} />
-          Live Demo
-        </a>
+      <div className="mt-auto pt-7">
+        <div className="glass-pill rounded-2xl px-4 py-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+          Resume project · details available on request
+        </div>
       </div>
     </article>
   )

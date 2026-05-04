@@ -1,6 +1,33 @@
-import { BriefcaseBusiness, GitBranch, Mail, MapPin, Phone } from 'lucide-react'
+import { ArrowUpRight, BriefcaseBusiness, GitBranch, Mail, MapPin, Phone } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
 import SocialLink from '../components/SocialLink'
+
+const contactActions = [
+  {
+    label: 'Email me',
+    value: 'shaikfarooq2020@gmail.com',
+    href: 'mailto:shaikfarooq2020@gmail.com?subject=Portfolio%20Enquiry&body=Hi%20Farooq%2C%0A%0AI%20saw%20your%20portfolio%20and%20wanted%20to%20connect.',
+    icon: Mail,
+  },
+  {
+    label: 'Call',
+    value: '+91 92906 62243',
+    href: 'tel:+919290662243',
+    icon: Phone,
+  },
+  {
+    label: 'GitHub',
+    value: 'github.com/faru506',
+    href: 'https://github.com/faru506',
+    icon: GitBranch,
+  },
+  {
+    label: 'LinkedIn',
+    value: 'linkedin.com/in/faru506',
+    href: 'https://linkedin.com/in/faru506',
+    icon: BriefcaseBusiness,
+  },
+]
 
 function Contact() {
   return (
@@ -9,92 +36,57 @@ function Contact() {
         <SectionHeader
           eyebrow="Contact"
           title="Let us build something useful"
-          description="Reach out for Rails, React, API, database, monitoring, or LLM workflow work. The form is UI-only for now."
+          description="Reach out directly through the working links below for Rails, React, API, database, monitoring, or LLM workflow work."
         />
 
-        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr]">
-          <div className="panel rounded-2xl p-6 sm:p-8">
-            <h3 className="text-xl font-bold text-slate-950 dark:text-white">Contact details</h3>
-            <div className="mt-6 space-y-4">
-              <a
-                href="mailto:shaikfarooq2020@gmail.com"
-                className="focus-ring flex items-center gap-3 rounded-xl p-3 text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
-              >
-                <Mail className="text-teal-600 dark:text-teal-300" size={20} />
-                shaikfarooq2020@gmail.com
-              </a>
-              <a
-                href="tel:+919290662243"
-                className="focus-ring flex items-center gap-3 rounded-xl p-3 text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
-              >
-                <Phone className="text-teal-600 dark:text-teal-300" size={20} />
-                +91 92906 62243
-              </a>
-              <div className="flex items-center gap-3 rounded-xl p-3 text-slate-700 dark:text-slate-200">
-                <MapPin className="text-teal-600 dark:text-teal-300" size={20} />
-                Bangalore, India
-              </div>
-              <a
-                href="https://github.com/faru506"
-                target="_blank"
-                rel="noreferrer"
-                className="focus-ring flex items-center gap-3 rounded-xl p-3 text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
-              >
-                <GitBranch className="text-teal-600 dark:text-teal-300" size={20} />
-                github.com/faru506
-              </a>
-              <a
-                href="https://linkedin.com/in/faru506"
-                target="_blank"
-                rel="noreferrer"
-                className="focus-ring flex items-center gap-3 rounded-xl p-3 text-slate-700 transition hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
-              >
-                <BriefcaseBusiness className="text-teal-600 dark:text-teal-300" size={20} />
-                linkedin.com/in/faru506
-              </a>
+        <div className="grid gap-8 lg:grid-cols-[0.82fr_1.18fr]">
+          <div className="panel shine-card relative overflow-hidden rounded-3xl p-6 sm:p-8">
+            <div className="absolute -right-12 -top-12 h-40 w-40 rounded-full bg-teal-300/20 blur-3xl dark:bg-teal-300/10" />
+            <h3 className="relative text-2xl font-black tracking-tight text-slate-950 dark:text-white">
+              Available for full stack work
+            </h3>
+            <p className="relative mt-4 text-sm leading-7 text-slate-600 dark:text-slate-300">
+              I can help with Rails APIs, React UI, database performance, Sidekiq jobs,
+              observability, and LLM integrations.
+            </p>
+            <div className="relative mt-6 flex items-center gap-3 rounded-2xl border border-white/55 bg-white/42 p-4 text-slate-700 backdrop-blur-xl dark:border-white/10 dark:bg-white/5 dark:text-slate-200">
+              <MapPin className="text-teal-600 dark:text-teal-300" size={20} />
+              Bangalore, India
             </div>
-
-            <div className="mt-7 flex gap-3">
+            <div className="relative mt-7 flex gap-3">
               <SocialLink href="https://github.com/faru506" icon={GitBranch} label="GitHub" />
               <SocialLink href="https://linkedin.com/in/faru506" icon={BriefcaseBusiness} label="LinkedIn" />
               <SocialLink href="mailto:shaikfarooq2020@gmail.com" icon={Mail} label="Email" />
             </div>
           </div>
 
-          <form className="panel rounded-2xl p-6 sm:p-8">
-            <div className="grid gap-5 sm:grid-cols-2">
-              <label className="block">
-                <span className="text-sm font-bold text-slate-700 dark:text-slate-200">Name</span>
-                <input
-                  type="text"
-                  placeholder="Your name"
-                  className="focus-ring mt-2 w-full rounded-xl border border-white/55 bg-white/55 px-4 py-3 text-slate-900 backdrop-blur-xl transition placeholder:text-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
-                />
-              </label>
-              <label className="block">
-                <span className="text-sm font-bold text-slate-700 dark:text-slate-200">Email</span>
-                <input
-                  type="email"
-                  placeholder="you@example.com"
-                  className="focus-ring mt-2 w-full rounded-xl border border-white/55 bg-white/55 px-4 py-3 text-slate-900 backdrop-blur-xl transition placeholder:text-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
-                />
-              </label>
-            </div>
-            <label className="mt-5 block">
-              <span className="text-sm font-bold text-slate-700 dark:text-slate-200">Message</span>
-              <textarea
-                rows="6"
-                placeholder="Tell me about your project"
-                className="focus-ring mt-2 w-full resize-none rounded-xl border border-white/55 bg-white/55 px-4 py-3 text-slate-900 backdrop-blur-xl transition placeholder:text-slate-400 dark:border-white/10 dark:bg-white/5 dark:text-white"
-              />
-            </label>
-            <button
-              type="button"
-              className="focus-ring mt-6 inline-flex w-full items-center justify-center rounded-full bg-teal-500 px-6 py-3 text-sm font-bold text-white transition hover:bg-teal-600 sm:w-auto dark:bg-teal-400 dark:text-slate-950 dark:hover:bg-teal-300"
-            >
-              Send Message
-            </button>
-          </form>
+          <div className="grid gap-4 sm:grid-cols-2">
+            {contactActions.map(({ label, value, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target={href.startsWith('http') ? '_blank' : undefined}
+                rel={href.startsWith('http') ? 'noreferrer' : undefined}
+                className="panel shine-card group relative overflow-hidden rounded-3xl p-5 hover:-translate-y-2 hover:border-teal-200 hover:shadow-[0_26px_70px_rgba(20,184,166,0.14)] dark:hover:border-teal-800"
+              >
+                <div className="flex items-start justify-between gap-4">
+                  <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-teal-500 text-white shadow-lg shadow-teal-900/15 dark:bg-teal-300 dark:text-slate-950">
+                    <Icon size={21} />
+                  </div>
+                  <ArrowUpRight
+                    className="text-slate-400 transition group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:text-teal-600 dark:group-hover:text-teal-300"
+                    size={20}
+                  />
+                </div>
+                <p className="mt-5 text-sm font-semibold uppercase tracking-[0.18em] text-teal-600 dark:text-teal-300">
+                  {label}
+                </p>
+                <p className="mt-2 break-words text-base font-bold text-slate-900 dark:text-white">
+                  {value}
+                </p>
+              </a>
+            ))}
+          </div>
         </div>
       </div>
     </section>
