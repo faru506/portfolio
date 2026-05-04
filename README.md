@@ -11,7 +11,8 @@ Modern responsive portfolio website for Farooq Shaik, built with React, Vite, Ta
 - Mobile hamburger navigation
 - Hero, About, Skills, Projects, Experience, Contact, and Footer sections
 - Scroll-to-top button
-- Placeholder resume download and profile illustration
+- Resume PDF download and profile illustration
+- Glassmorphism surfaces with smooth hover and entrance transitions
 
 ## Run Locally
 

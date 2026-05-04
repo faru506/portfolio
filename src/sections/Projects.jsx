@@ -3,36 +3,36 @@ import SectionHeader from '../components/SectionHeader'
 
 const projects = [
   {
-    title: 'E-Commerce Platform',
+    title: 'Content Management System',
     description:
-      'A full stack shopping platform with account flows, product browsing, checkout, and scalable API boundaries.',
-    features: ['Authentication and role-aware flows', 'Payments-ready checkout UI', 'REST APIs backed by PostgreSQL'],
-    tech: ['Rails', 'React', 'PostgreSQL'],
+      'A role-based CMS for editorial teams with scalable Rails APIs, MongoDB-backed content models, and AI-assisted publishing workflows.',
+    features: ['Supported 20+ editorial users', 'Caching and indexing for publishing performance', 'LLM APIs for content generation and suggestions'],
+    tech: ['Ruby on Rails', 'MongoDB', 'JavaScript', 'React'],
   },
   {
-    title: 'CMS System',
+    title: 'Health Management System',
     description:
-      'A content management system for dynamic pages, editorial workflows, and role-based access control.',
-    features: ['Dynamic page management', 'User roles and permissions', 'MongoDB-backed content models'],
-    tech: ['Rails', 'MongoDB', 'REST APIs'],
+      'Backend APIs for patient and appointment workflows with database optimization, logging, and production reliability improvements.',
+    features: ['Patient and appointment management APIs', 'Optimized database queries', 'Logging for faster debugging and stability'],
+    tech: ['Ruby on Rails', 'PostgreSQL', 'REST APIs'],
   },
   {
-    title: 'Portfolio Website',
+    title: 'Crowdfunding Platform',
     description:
-      'A responsive developer portfolio with reusable sections, smooth navigation, and theme persistence.',
-    features: ['Responsive React components', 'Tailwind dark and light modes', 'Accessible contact form UI'],
-    tech: ['React', 'TailwindCSS', 'Vite'],
+      'A responsive React dashboard for campaign management and funding analytics with reusable UI components.',
+    features: ['Campaign management dashboard', 'Funding analytics UI', 'Optimized rendering for responsiveness'],
+    tech: ['React.js', 'JavaScript', 'Responsive UI'],
   },
 ]
 
 function Projects() {
   return (
-    <section id="projects" className="section-padding bg-white transition-colors dark:bg-slate-950">
+    <section id="projects" className="section-padding transition-colors">
       <div className="section-shell">
         <SectionHeader
           eyebrow="Projects"
           title="Selected work"
-          description="Representative projects showing backend API design, frontend implementation, and responsive product UI."
+          description="Projects from my resume covering CMS automation, healthcare workflows, and responsive React dashboard development."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">

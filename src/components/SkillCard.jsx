@@ -1,6 +1,6 @@
 function SkillCard({ icon: Icon, title, description, items }) {
   return (
-    <article className="panel rounded-2xl p-6 transition duration-300 hover:-translate-y-1 hover:border-teal-200 dark:hover:border-teal-800">
+    <article className="panel rounded-2xl p-6 hover:-translate-y-2 hover:border-teal-200 hover:shadow-[0_26px_70px_rgba(20,184,166,0.14)] dark:hover:border-teal-800">
       <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-teal-50 text-teal-700 dark:bg-teal-950 dark:text-teal-300">
         <Icon size={22} />
       </div>
@@ -10,7 +10,7 @@ function SkillCard({ icon: Icon, title, description, items }) {
         {items.map((item) => (
           <span
             key={item}
-            className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700 dark:bg-slate-900 dark:text-slate-200"
+            className="glass-pill rounded-full px-3 py-1 text-xs font-bold text-slate-700 dark:text-slate-200"
           >
             {item}
           </span>

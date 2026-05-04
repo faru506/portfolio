@@ -1,26 +1,42 @@
-import { ArrowDownToLine, Mail, Rocket } from 'lucide-react'
+import { ArrowDownToLine, MapPin, Mail, Rocket, Sparkles } from 'lucide-react'
 
 function Hero() {
   return (
     <section
       id="home"
-      className="relative overflow-hidden bg-[radial-gradient(circle_at_top_left,rgba(20,184,166,0.18),transparent_32%),linear-gradient(180deg,#ffffff_0%,#f7f9fc_100%)] pt-20 dark:bg-[radial-gradient(circle_at_top_left,rgba(45,212,191,0.16),transparent_30%),linear-gradient(180deg,#0f172a_0%,#0d1117_100%)]"
+      className="relative overflow-hidden pt-20"
     >
+      <div className="pointer-events-none absolute left-1/2 top-16 h-72 w-72 -translate-x-1/2 rounded-full bg-teal-300/20 blur-3xl dark:bg-teal-300/10" />
       <div className="section-shell grid min-h-[calc(100svh-4rem)] items-center gap-12 py-16 lg:grid-cols-[1.08fr_0.92fr] lg:py-20">
-        <div className="max-w-3xl">
-          <p className="inline-flex rounded-full border border-teal-200 bg-teal-50 px-4 py-2 text-sm font-semibold text-teal-700 dark:border-teal-900/70 dark:bg-teal-950/70 dark:text-teal-200">
-            Software Engineer · Full Stack Developer
+        <div className="animate-fade-up max-w-3xl">
+          <p className="glass-pill inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-teal-700 dark:text-teal-200">
+            <Sparkles size={16} />
+            Full Stack Developer · Rails · React · LLM Integration
           </p>
           <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl dark:text-white">
             Hi, I am Farooq Shaik.
             <span className="block text-teal-600 dark:text-teal-300">
-              I build scalable web products.
+              I build reliable, AI-ready web apps.
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-            Full Stack Developer with 3.5+ years of experience in Ruby on Rails,
-            ReactJS, REST APIs, database optimization, and responsive UI development.
+            Bangalore-based Full Stack Developer with 3.5+ years building scalable
+            Ruby on Rails and React.js applications, RESTful APIs, background jobs,
+            production monitoring, and LLM-powered workflows.
           </p>
+          <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
+            <span className="glass-pill inline-flex items-center gap-2 rounded-full px-4 py-2">
+              <MapPin size={16} />
+              Bangalore, India
+            </span>
+            <a
+              href="mailto:shaikfarooq2020@gmail.com"
+              className="glass-pill focus-ring inline-flex items-center gap-2 rounded-full px-4 py-2 transition hover:text-teal-700 dark:hover:text-teal-200"
+            >
+              <Mail size={16} />
+              shaikfarooq2020@gmail.com
+            </a>
+          </div>
 
           <div className="mt-9 flex flex-col gap-3 sm:flex-row">
             <a
@@ -38,7 +54,7 @@ function Hero() {
               Contact Me
             </a>
             <a
-              href="/resume-placeholder.txt"
+              href="/FarooqShaikCV.pdf"
               download
               className="focus-ring inline-flex items-center justify-center gap-2 rounded-full border border-transparent px-6 py-3 text-sm font-bold text-slate-700 transition hover:-translate-y-0.5 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
             >
@@ -50,7 +66,7 @@ function Hero() {
 
         <div className="relative mx-auto w-full max-w-md lg:max-w-lg">
           <div className="absolute -inset-5 rounded-full bg-teal-300/20 blur-3xl dark:bg-teal-500/10" />
-          <div className="panel relative overflow-hidden rounded-[2rem] p-6">
+          <div className="panel animate-float-card relative overflow-hidden rounded-[2rem] p-6">
             <div className="aspect-square overflow-hidden rounded-[1.5rem] bg-gradient-to-br from-teal-100 via-white to-blue-100 dark:from-slate-900 dark:via-slate-950 dark:to-teal-950">
               <img
                 src="/profile-placeholder.svg"
@@ -60,7 +76,7 @@ function Hero() {
               />
             </div>
             <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-              {['Rails', 'React', 'APIs'].map((skill) => (
+              {['Rails', 'React', 'LLMs'].map((skill) => (
                 <span
                   key={skill}
                   className="rounded-xl bg-slate-100 px-3 py-2 text-sm font-bold text-slate-700 dark:bg-slate-900 dark:text-slate-200"

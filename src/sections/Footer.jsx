@@ -3,7 +3,7 @@ import SocialLink from '../components/SocialLink'
 
 function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-slate-50 py-8 transition-colors dark:border-slate-800 dark:bg-slate-950">
+    <footer className="border-t border-white/55 bg-white/35 py-8 backdrop-blur-xl transition-colors dark:border-white/10 dark:bg-slate-950/45">
       <div className="section-shell flex flex-col items-center justify-between gap-5 sm:flex-row">
         <div>
           <p className="text-center text-sm font-semibold text-slate-700 sm:text-left dark:text-slate-200">
@@ -14,9 +14,9 @@ function Footer() {
           </p>
         </div>
         <div className="flex gap-3">
-          <SocialLink href="https://github.com/farooq-placeholder" icon={GitBranch} label="GitHub" />
-          <SocialLink href="https://linkedin.com/in/farooq-placeholder" icon={BriefcaseBusiness} label="LinkedIn" />
-          <SocialLink href="mailto:farooq@example.com" icon={Mail} label="Email" />
+          <SocialLink href="https://github.com/faru506" icon={GitBranch} label="GitHub" />
+          <SocialLink href="https://linkedin.com/in/faru506" icon={BriefcaseBusiness} label="LinkedIn" />
+          <SocialLink href="mailto:shaikfarooq2020@gmail.com" icon={Mail} label="Email" />
         </div>
       </div>
     </footer>

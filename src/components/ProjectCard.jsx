@@ -2,7 +2,7 @@ import { ExternalLink, GitBranch } from 'lucide-react'
 
 function ProjectCard({ title, description, features, tech }) {
   return (
-    <article className="panel group flex h-full flex-col rounded-2xl p-6 transition duration-300 hover:-translate-y-1 hover:border-teal-200 dark:hover:border-teal-800">
+    <article className="panel group flex h-full flex-col rounded-2xl p-6 hover:-translate-y-2 hover:border-teal-200 hover:shadow-[0_26px_70px_rgba(20,184,166,0.14)] dark:hover:border-teal-800 dark:hover:shadow-[0_26px_70px_rgba(45,212,191,0.10)]">
       <div className="mb-5 h-2 w-16 rounded-full bg-teal-500 transition group-hover:w-24 dark:bg-teal-300" />
       <h3 className="text-xl font-bold text-slate-950 dark:text-white">{title}</h3>
       <p className="mt-3 text-sm leading-6 text-slate-600 dark:text-slate-300">{description}</p>
@@ -18,7 +18,7 @@ function ProjectCard({ title, description, features, tech }) {
         {tech.map((item) => (
           <span
             key={item}
-            className="rounded-full bg-slate-100 px-3 py-1 text-xs font-bold text-slate-700 dark:bg-slate-900 dark:text-slate-200"
+            className="glass-pill rounded-full px-3 py-1 text-xs font-bold text-slate-700 dark:text-slate-200"
           >
             {item}
           </span>
