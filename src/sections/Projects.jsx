@@ -6,21 +6,33 @@ const projects = [
     title: 'Content Management System',
     description:
       'A role-based CMS for editorial teams with scalable Rails APIs, MongoDB-backed content models, and AI-assisted publishing workflows.',
-    features: ['Supported 20+ editorial users', 'Caching and indexing for publishing performance', 'LLM APIs for content generation and suggestions'],
+    features: [
+      'Designed role-based workflows for 20+ editorial users with secure access and structured content operations',
+      'Built Rails REST APIs with caching and indexing to improve publishing speed and reduce repeated database work',
+      'Integrated LLM APIs to automate draft generation, suggestions, and editorial assistance inside CMS workflows',
+    ],
     tech: ['Ruby on Rails', 'MongoDB', 'JavaScript', 'React'],
   },
   {
     title: 'Health Management System',
     description:
       'Backend APIs for patient and appointment workflows with database optimization, logging, and production reliability improvements.',
-    features: ['Patient and appointment management APIs', 'Optimized database queries', 'Logging for faster debugging and stability'],
+    features: [
+      'Developed Rails APIs for patient records, appointment scheduling, and operational healthcare workflows',
+      'Optimized PostgreSQL queries and data access patterns to keep backend responses predictable under load',
+      'Added logging and issue tracing patterns that improved debugging speed and production stability',
+    ],
     tech: ['Ruby on Rails', 'PostgreSQL', 'REST APIs'],
   },
   {
     title: 'Crowdfunding Platform',
     description:
       'A responsive React dashboard for campaign management and funding analytics with reusable UI components.',
-    features: ['Campaign management dashboard', 'Funding analytics UI', 'Optimized rendering for responsiveness'],
+    features: [
+      'Built a responsive React.js dashboard for campaign setup, funding progress, and user-facing analytics',
+      'Created reusable UI components to keep campaign cards, metrics, and dashboard states consistent',
+      'Optimized rendering and layout behavior so funding data stayed readable across desktop and mobile screens',
+    ],
     tech: ['React.js', 'JavaScript', 'Responsive UI'],
   },
 ]
@@ -32,7 +44,7 @@ function Projects() {
         <SectionHeader
           eyebrow="Projects"
           title="Selected work"
-          description="Projects from my resume covering CMS automation, healthcare workflows, and responsive React dashboard development."
+          description="Resume-backed projects showing backend ownership, database optimization, AI workflow integration, and polished React dashboard development."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">

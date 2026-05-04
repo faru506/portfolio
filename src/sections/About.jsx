@@ -2,10 +2,10 @@ import { CheckCircle2 } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
 
 const strengths = [
-  'Production issue debugging, reliability fixes, and DataDog observability',
-  'RESTful API design with authentication and workflow automation',
-  'Sidekiq background jobs for bulk CSV processing and async workloads',
-  'LLM API integrations for content generation and intelligent suggestions',
+  'Production troubleshooting with DataDog observability, structured logging, and reliability-focused fixes',
+  'RESTful API design for authentication, CMS workflows, healthcare flows, and backend automation',
+  'Sidekiq background processing for bulk CSV workloads, async jobs, and faster request cycles',
+  'LLM integrations across ChatGPT, Claude, Gemini, and Grok for content automation and smart suggestions',
 ]
 
 function About() {
@@ -15,7 +15,7 @@ function About() {
         <SectionHeader
           eyebrow="About"
           title="Full stack engineering with production ownership"
-          description="I work across Rails, React.js, databases, background jobs, monitoring, and AI-assisted workflows. My focus is production-ready delivery: clear APIs, stable systems, and polished interfaces."
+          description="I work across Rails, React.js, databases, background jobs, monitoring, and AI-assisted workflows. My focus is production-ready delivery: clear APIs, stable systems, measurable performance gains, and polished interfaces."
         />
 
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -33,7 +33,8 @@ function About() {
             </div>
             <p className="mt-5 text-base leading-7 text-slate-600 dark:text-slate-300">
               Building scalable web applications with Ruby on Rails, React.js,
-              PostgreSQL, MongoDB, MySQL, Sidekiq, Docker, DataDog, Git, and REST APIs.
+              PostgreSQL, MongoDB, MySQL, Sidekiq, Docker, DataDog, Git, REST APIs,
+              and LLM-powered product workflows.
             </p>
           </div>
 
