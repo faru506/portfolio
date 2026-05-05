@@ -8,10 +8,11 @@ const roles = [
     period: 'Sept 2025 - Present',
     tag: 'Reliability + Performance',
     items: [
-      'Investigated production 500 errors from logs, traces, and failing request paths, then shipped fixes that improved application reliability.',
+      'Diagnosed and resolved frontend and backend production issues, reducing system downtime by 30%.',
+      'Developed and enhanced React.js interfaces to improve user experience, responsiveness, and full stack feature delivery.',
       'Moved bulk CSV processing into Sidekiq background jobs, reducing request processing time by 80% and preventing long-running web requests.',
-      'Tuned ActiveRecord queries with better joins, eager loading, and database indexes to improve API response performance.',
-      'Integrated DataDog monitoring and structured logging so production issues could be detected, traced, and resolved faster.',
+      'Optimized ActiveRecord queries and indexes, reducing API response time by 40%.',
+      'Integrated DataDog monitoring and collaborated across teams, reducing issue detection time by 50%.',
     ],
   },
   {
@@ -20,10 +21,11 @@ const roles = [
     period: 'Jul 2022 - Aug 2025',
     tag: 'Rails + React + LLMs',
     items: [
-      'Designed, implemented, and deployed 15+ RESTful APIs in Ruby on Rails for authentication, workflow automation, and CMS operations.',
-      'Integrated ChatGPT, Claude, Gemini, and Grok APIs into editorial workflows for AI-assisted content generation and suggestions.',
-      'Improved query performance with indexing and data-access optimization for systems serving 10k+ monthly users.',
-      'Built reusable React.js components and connected them with backend APIs to deliver consistent full stack product features.',
+      'Designed and developed 15+ RESTful APIs in Ruby on Rails for scalable backend services and product workflows.',
+      'Built reusable responsive React.js components, improving UI consistency and development speed.',
+      'Integrated LLM APIs for AI-driven content generation, reducing manual effort by 40%.',
+      'Optimized database queries and indexing, improving performance by 35% for 10k+ monthly users.',
+      'Collaborated with cross-functional teams and code reviews, reducing production bugs by 20%.',
     ],
   },
   {
@@ -32,9 +34,8 @@ const roles = [
     period: 'Mar 2022 - Jun 2022',
     tag: 'Foundation',
     items: [
-      'Built authentication screens and reusable UI modules in React.js with attention to usability and responsive behavior.',
-      'Contributed to Ruby on Rails backend features, API integrations, and request/response validation.',
-      'Supported debugging, manual testing, and issue verification across frontend and backend modules before release.',
+      'Developed React.js UI modules and assisted Rails backend development for API integrations.',
+      'Participated in debugging, testing, and feature implementation across frontend and backend modules.',
     ],
   },
 ]
@@ -46,7 +47,7 @@ function Experience() {
         <SectionHeader
           eyebrow="Experience"
           title="Experience timeline"
-          description="3.5+ years of full stack work across production debugging, API delivery, database performance, background processing, LLM integrations, and React UI development."
+          description="3.5+ years of full stack work across scalable API design, responsive React interfaces, performance optimization, production debugging, testing, and LLM integrations."
         />
 
         <div className="mx-auto max-w-5xl space-y-5">

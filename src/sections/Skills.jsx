@@ -7,7 +7,7 @@ const skills = [
     title: 'Backend',
     description: 'Production Rails services with clean APIs, authentication, async jobs, and maintainable domain logic.',
     icon: ServerCog,
-    items: ['Ruby', 'Ruby on Rails', 'REST APIs', 'Sidekiq', 'Auth'],
+    items: ['Ruby', 'Ruby on Rails', 'RESTful APIs', 'Sidekiq', 'Microservices', 'Auth'],
   },
   {
     title: 'Frontend',
@@ -31,7 +31,7 @@ const skills = [
     title: 'Tools',
     description: 'Delivery and observability tooling for debugging, monitoring, collaboration, and deployment readiness.',
     icon: GitBranch,
-    items: ['Git', 'GitHub', 'Docker', 'DataDog', 'System Design Basics'],
+    items: ['Git', 'GitHub', 'Docker', 'DataDog', 'CI/CD', 'RSpec', 'Unit Testing', 'Agile'],
   },
 ]
 
@@ -42,7 +42,7 @@ function Skills() {
         <SectionHeader
           eyebrow="Skills"
           title="Stack from the resume"
-          description="A practical production stack covering Rails services, React interfaces, database tuning, monitoring, async processing, and LLM-powered product workflows."
+          description="A practical production stack covering Rails services, React interfaces, API design, testing, CI/CD, database tuning, monitoring, async processing, and LLM-powered product workflows."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">

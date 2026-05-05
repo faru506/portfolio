@@ -7,9 +7,10 @@ const projects = [
     description:
       'A role-based CMS for editorial teams with scalable Rails APIs, MongoDB-backed content models, and AI-assisted publishing workflows.',
     features: [
-      'Designed role-based workflows for 20+ editorial users with secure access and structured content operations',
-      'Built Rails REST APIs with caching and indexing to improve publishing speed and reduce repeated database work',
-      'Integrated LLM APIs to automate draft generation, suggestions, and editorial assistance inside CMS workflows',
+      'Developed role-based CMS workflows supporting 20+ active users and improving publishing efficiency by 30%',
+      'Built scalable Rails REST APIs with caching and indexing to improve backend performance',
+      'Implemented React-based UI flows that improved workflow efficiency and reduced manual operations by 25%',
+      'Integrated LLM APIs for AI-assisted content creation, reducing content generation time by 40%',
     ],
     tech: ['Ruby on Rails', 'MongoDB', 'JavaScript', 'React'],
   },
@@ -18,9 +19,8 @@ const projects = [
     description:
       'Backend APIs for patient and appointment workflows with database optimization, logging, and production reliability improvements.',
     features: [
-      'Developed Rails APIs for patient records, appointment scheduling, and operational healthcare workflows',
-      'Optimized PostgreSQL queries and data access patterns to keep backend responses predictable under load',
-      'Added logging and issue tracing patterns that improved debugging speed and production stability',
+      'Developed Ruby on Rails backend APIs for patient and appointment management workflows',
+      'Optimized PostgreSQL queries and added logging to improve backend performance, reliability, and debugging',
     ],
     tech: ['Ruby on Rails', 'PostgreSQL', 'REST APIs'],
   },
@@ -29,9 +29,8 @@ const projects = [
     description:
       'A responsive React dashboard for campaign management and funding analytics with reusable UI components.',
     features: [
-      'Built a responsive React.js dashboard for campaign setup, funding progress, and user-facing analytics',
-      'Created reusable UI components to keep campaign cards, metrics, and dashboard states consistent',
-      'Optimized rendering and layout behavior so funding data stayed readable across desktop and mobile screens',
+      'Built a responsive React dashboard for campaign management and funding analytics',
+      'Developed reusable UI components and optimized rendering performance for smoother dashboard interactions',
     ],
     tech: ['React.js', 'JavaScript', 'Responsive UI'],
   },
@@ -44,7 +43,7 @@ function Projects() {
         <SectionHeader
           eyebrow="Projects"
           title="Selected work"
-          description="Resume-backed projects showing backend ownership, database optimization, AI workflow integration, and polished React dashboard development."
+          description="Resume-backed projects showing API design, performance optimization, AI-assisted workflows, and responsive React dashboard development."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">
