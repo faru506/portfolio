@@ -3,36 +3,36 @@ import SectionHeader from '../components/SectionHeader'
 
 const projects = [
   {
-    title: 'Content Management System',
+    title: 'AI-Powered Content Management System',
     description:
-      'A role-based CMS for editorial teams with scalable Rails APIs, MongoDB-backed content models, and AI-assisted publishing workflows.',
+      'A multi-tenant, role-based CMS with MongoDB-backed content models, Redis caching, webhook-driven events, and OpenAI-assisted editorial workflows.',
     features: [
-      'Developed role-based CMS workflows supporting 20+ active users and improving publishing efficiency by 30%',
-      'Built scalable Rails REST APIs with caching and indexing to improve backend performance',
-      'Implemented React-based UI flows that improved workflow efficiency and reduced manual operations by 25%',
-      'Integrated LLM APIs for AI-assisted content creation, reducing content generation time by 40%',
+      'Supported 20+ concurrent editors while LLM-assisted drafting cut content generation time by 40% and improved publishing throughput by 30%',
+      'Implemented Redis-backed ETags and REST API caching, reducing average read latency by 45% under peak editorial load',
+      'Designed webhook-driven event flows that decoupled editorial actions from downstream services for zero-downtime deploys',
     ],
-    tech: ['Ruby on Rails', 'MongoDB', 'JavaScript', 'React'],
+    tech: ['Rails', 'MongoDB', 'React.js', 'OpenAI API', 'Redis'],
   },
   {
     title: 'Health Management System',
     description:
-      'Backend APIs for patient and appointment workflows with database optimization, logging, and production reliability improvements.',
+      'A HIPAA-aligned Rails backend for healthcare workflows with PostgreSQL, structured query logging, RBAC, and JWT authentication.',
     features: [
-      'Developed Ruby on Rails backend APIs for patient and appointment management workflows',
-      'Optimized PostgreSQL queries and added logging to improve backend performance, reliability, and debugging',
+      'Resolved 8 critical slow queries and reduced average page load from 3+ seconds to under 500 ms',
+      'Implemented role-based access control and JWT authentication across API endpoints for stronger patient-record security',
     ],
     tech: ['Ruby on Rails', 'PostgreSQL', 'REST APIs'],
   },
   {
     title: 'Crowdfunding Platform',
     description:
-      'A responsive React dashboard for campaign management and funding analytics with reusable UI components.',
+      'A React campaign analytics dashboard with lazy loading, memoized selectors, and real-time contribution updates.',
     features: [
-      'Built a responsive React dashboard for campaign management and funding analytics',
-      'Developed reusable UI components and optimized rendering performance for smoother dashboard interactions',
+      'Cut initial render time by 35% through code-split lazy loading and memoized selectors',
+      'Implemented WebSocket-based contribution tracking for live pledge updates without full-page reloads',
+      'Reached a 92/100 Lighthouse score with responsive dashboard performance optimizations',
     ],
-    tech: ['React.js', 'JavaScript', 'Responsive UI'],
+    tech: ['React.js', 'JavaScript', 'WebSocket', 'Performance'],
   },
 ]
 
@@ -43,7 +43,7 @@ function Projects() {
         <SectionHeader
           eyebrow="Projects"
           title="Selected work"
-          description="Resume-backed projects showing API design, performance optimization, AI-assisted workflows, and responsive React dashboard development."
+          description="Resume-backed projects showing distributed APIs, Redis caching, OpenAI-powered workflows, healthcare security, and high-performance React dashboards."
         />
 
         <div className="grid gap-6 lg:grid-cols-3">

@@ -11,18 +11,18 @@ function Hero() {
         <div className="animate-fade-up max-w-3xl">
           <p className="glass-pill inline-flex items-center gap-2 rounded-full px-4 py-2 text-sm font-semibold text-teal-700 dark:text-teal-200">
             <Sparkles size={16} />
-            Full Stack Developer · API Design · Performance Optimization
+            Software Engineer · Distributed Systems · LLM Integration
           </p>
           <h1 className="mt-6 text-4xl font-black leading-tight tracking-tight text-slate-950 sm:text-5xl lg:text-6xl dark:text-white">
             Hi, I am Farooq Shaik.
             <span className="block text-teal-600 dark:text-teal-300">
-              I build reliable, AI-ready web apps.
+              I build fast, observable web platforms.
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-600 dark:text-slate-300">
-            Bangalore-based Full Stack Developer with 3.5+ years building scalable,
-            high-performance Ruby on Rails and React.js applications, RESTful APIs,
-            responsive interfaces, and LLM-powered product features.
+            Bangalore-based Software Engineer with around 4 years designing scalable
+            Rails and React.js systems, microservices, API architecture, production
+            observability, and LLM-powered workflow automation.
           </p>
           <div className="mt-5 flex flex-wrap gap-3 text-sm font-semibold text-slate-600 dark:text-slate-300">
             <span className="glass-pill inline-flex items-center gap-2 rounded-full px-4 py-2">
@@ -54,7 +54,7 @@ function Hero() {
               Contact Me
             </a>
             <a
-              href="/FarooqShaikFullStackResume.pdf"
+              href="/FarooqShaikResume.pdf"
               download
               className="focus-ring inline-flex items-center justify-center gap-2 rounded-full border border-transparent px-6 py-3 text-sm font-bold text-slate-700 transition hover:-translate-y-0.5 hover:bg-slate-100 dark:text-slate-200 dark:hover:bg-slate-900"
             >
@@ -77,7 +77,7 @@ function Hero() {
               />
             </div>
             <div className="mt-5 grid grid-cols-3 gap-3 text-center">
-              {['Rails', 'React', 'LLMs'].map((skill) => (
+              {['Rails', 'React', 'AWS'].map((skill) => (
                 <span
                   key={skill}
                   className="glass-pill rounded-xl px-3 py-2 text-sm font-bold text-slate-700 dark:text-slate-200"

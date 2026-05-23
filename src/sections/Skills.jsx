@@ -5,33 +5,33 @@ import SkillCard from '../components/SkillCard'
 const skills = [
   {
     title: 'Backend',
-    description: 'Production Rails services with clean APIs, authentication, async jobs, and maintainable domain logic.',
+    description: 'Production Rails services with API architecture, microservices, background jobs, and system design.',
     icon: ServerCog,
-    items: ['Ruby', 'Ruby on Rails', 'RESTful APIs', 'Sidekiq', 'Microservices', 'Auth'],
+    items: ['Ruby', 'Ruby on Rails', 'RESTful APIs', 'GraphQL', 'Sidekiq', 'Microservices'],
   },
   {
     title: 'Frontend',
-    description: 'Responsive React interfaces with reusable components, clean state handling, and polished UX details.',
+    description: 'Responsive React interfaces with state management, component architecture, and performance tuning.',
     icon: Code2,
-    items: ['React.js', 'JavaScript ES6+', 'HTML5', 'CSS3', 'Bootstrap', 'TailwindCSS'],
+    items: ['React.js', 'Redux', 'JavaScript ES6+', 'HTML5', 'CSS3', 'TailwindCSS'],
   },
   {
     title: 'Databases',
-    description: 'Query tuning, indexing, and data modeling for fast APIs and reliable application workflows.',
+    description: 'Query optimization, indexing strategies, and caching for fast APIs and scalable workflows.',
     icon: Database,
-    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Indexes', 'Query Tuning'],
+    items: ['PostgreSQL', 'MongoDB', 'MySQL', 'Redis', 'Indexing', 'Query Optimization'],
   },
   {
     title: 'AI & LLMs',
-    description: 'LLM API integrations that turn product workflows into assisted, content-aware experiences.',
+    description: 'LLM-powered pipelines that automate manual workflows and accelerate content operations.',
     icon: Bot,
-    items: ['OpenAI', 'Claude', 'Gemini', 'Grok', 'Prompted Workflows'],
+    items: ['OpenAI API', 'LLM Pipelines', 'Content Automation', 'Prompted Workflows'],
   },
   {
     title: 'Tools',
-    description: 'Delivery and observability tooling for debugging, monitoring, collaboration, and deployment readiness.',
+    description: 'Cloud, delivery, observability, testing, and collaboration practices for production teams.',
     icon: GitBranch,
-    items: ['Git', 'GitHub', 'Docker', 'DataDog', 'CI/CD', 'RSpec', 'Unit Testing', 'Agile'],
+    items: ['AWS', 'Docker', 'CI/CD', 'DataDog', 'RSpec', 'Code Review', 'Agile'],
   },
 ]
 
@@ -41,8 +41,8 @@ function Skills() {
       <div className="section-shell">
         <SectionHeader
           eyebrow="Skills"
-          title="Stack from the resume"
-          description="A practical production stack covering Rails services, React interfaces, API design, testing, CI/CD, database tuning, monitoring, async processing, and LLM-powered product workflows."
+          title="Production stack from the resume"
+          description="A practical stack covering distributed Rails services, React interfaces, REST and GraphQL APIs, AWS, Redis caching, CI/CD, testing, observability, and LLM-powered workflows."
         />
 
         <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-5">

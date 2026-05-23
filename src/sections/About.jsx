@@ -2,10 +2,10 @@ import { CheckCircle2 } from 'lucide-react'
 import SectionHeader from '../components/SectionHeader'
 
 const strengths = [
-  'Production troubleshooting that reduces downtime and improves system reliability',
-  'RESTful API design for scalable backend services, authentication, CMS workflows, and automation',
-  'Sidekiq background processing for bulk CSV workloads, async jobs, and faster request cycles',
-  'Performance optimization across ActiveRecord queries, indexing, API latency, and React interfaces',
+  'Distributed Rails systems handling 50K+ daily transactions with 80% latency reduction',
+  'Production observability with DataDog APM, AWS CloudWatch dashboards, and proactive alerting',
+  'API architecture across REST, GraphQL, microservices, RBAC, JWT auth, and Redis-backed caching',
+  'Technical mentorship, code review, stakeholder communication, and Agile delivery ownership',
 ]
 
 function About() {
@@ -14,8 +14,8 @@ function About() {
       <div className="section-shell">
         <SectionHeader
           eyebrow="About"
-          title="Full stack engineering with production ownership"
-          description="I work across Rails, React.js, API design, databases, background jobs, testing, monitoring, and AI-assisted workflows. My focus is production-ready delivery: clear APIs, stable systems, measurable performance gains, and polished interfaces."
+          title="Full stack engineering with systems ownership"
+          description="I work across Rails, React.js, microservices, API architecture, databases, AWS, observability, testing, and LLM-assisted workflows. My focus is production-ready delivery: fast APIs, stable systems, measurable business impact, and polished interfaces."
         />
 
         <div className="grid gap-6 lg:grid-cols-[0.9fr_1.1fr]">
@@ -25,16 +25,16 @@ function About() {
             </p>
             <div className="mt-5 flex items-end gap-3">
               <span className="text-6xl font-black tracking-tight text-slate-950 dark:text-white">
-                3.5+
+                4
               </span>
               <span className="pb-2 text-lg font-bold text-slate-600 dark:text-slate-300">
                 years
               </span>
             </div>
             <p className="mt-5 text-base leading-7 text-slate-600 dark:text-slate-300">
-              Building scalable web applications with Ruby on Rails, React.js,
-              PostgreSQL, MongoDB, MySQL, Sidekiq, Docker, DataDog, Git, CI/CD,
-              RSpec, RESTful APIs, and LLM-powered product workflows.
+              Building scalable applications with Ruby on Rails, React.js, Redux,
+              PostgreSQL, MongoDB, MySQL, Redis, Sidekiq, AWS, Docker, DataDog,
+              CI/CD, RSpec, RESTful APIs, GraphQL, and LLM-powered pipelines.
             </p>
           </div>
 
